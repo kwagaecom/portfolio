@@ -44,10 +44,143 @@
         
   <!-- end topbar -->
   
+<style>
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f8;
+  color: #333;
+}
+
+/* Form Container */
+#contactForm {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+#contactForm p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.formbold-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.formbold-btn:hover {
+  background-color: #45a049;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.form-group {
+  padding: 10px;
+  flex: 1 1 100%; /* Default to full-width */
+  box-sizing: border-box;
+}
+
+.form-group.col-12 {
+  flex: 1 1 100%;
+}
+
+.form-group.col-md-6 {
+  flex: 1 1 50%;
+}
+
+.form-group.col-md-3 {
+  flex: 1 1 25%;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  outline: none;
+}
+
+.form-check-input {
+  margin-right: 10px;
+}
+
+.form-check-label {
+  font-size: 14px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+/* Recommendations Section */
+.form-row label {
+  font-size: 14px;
+  color: #444;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="url"],
+.form-row input[type="number"],
+.form-row input[type="date"] {
+  margin-bottom: 20px;
+}
+
+.form-row:last-child input {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-group.col-md-6, .form-group.col-md-3 {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .formbold-btn {
+    font-size: 14px;
+  }
+}
+</style>
 <div class="formbold-main-wrapper">
     <div class="formbold-form-wrapper">
         <div class="panel-heading panel-title">
-            <h3 class="s3-fs-xs-3 text-center" style="color:#782f40;">Internship Program Application</h3>
+            <h3 class="s3-fs-xs-3 text-center" align="text-center"style="color:#782f40;">Internship Program Application</h3>
             
         </div>
         <div class="panel-body"style="background-image: url('https://media.istockphoto.com/id/1043738352/photo/internship-puzzle-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=SiOnq91Yke22XcHjumEq_8JZWkS2-PcIjYedjWAjyMI='); background-size: cover; background-position: center;">
@@ -296,7 +429,7 @@ ul {
 </style>
 
 <div align="center" class="copyright">
-    <span>&copy; Copyright <strong><span id="yearSpan"></span> WebNextStudios</strong>. All Rights Reserved</span>
+    <span>&copy; Copyright <strong><span id="yearSpan"></span> <a href="https://webnextstudios.club/">WebNextStudios</a> </strong>. All Rights Reserved</span>
 </div>
 
 
@@ -313,7 +446,7 @@ ul {
 
     </footer>
   <!-- end footer -->
-  <div class="dmtop">Scroll to Top</div>
+  
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
